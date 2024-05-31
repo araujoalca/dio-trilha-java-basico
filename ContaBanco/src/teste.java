@@ -10,7 +10,7 @@ public class teste {
         String nomeCliente;
         double saldo;
 
-        System.out.println("Digite o número da conta: ");
+        System.out.println("\nDigite o número da conta: ");
         conta = leitor.nextInt();
         leitor.nextLine(); // Consome a nova linha deixada pelo nextInt()
 
@@ -25,15 +25,10 @@ public class teste {
 
         ContaTerminal contaTerminal = new ContaTerminal(conta, agencia, nomeCliente, saldo);
 
-        System.out.println("Olá, " + contaTerminal.getNomeCliente() + "! Obrigado por criar uma conta em nosso banco! Os dados da sua conta são:");
-
-        System.out.println("Conta: " + contaTerminal.getNumero());
-        System.out.println("Agência: " + contaTerminal.getAgencia());
-        System.out.println("Nome do cliente: " + contaTerminal.getNomeCliente());
-        System.out.println("Saldo: " + contaTerminal.getSaldo());
-
+        System.out.println("\nOla, " + contaTerminal.getNomeCliente() + "! Obrigado por criar uma conta em nosso banco! Sua agencia eh " + contaTerminal.getAgencia() + ", conta " + contaTerminal.getNumero() + ", e o seu saldo atual de " + contaTerminal.getSaldo() + " reais ja esta disponivel para saque!\n");
+       
         leitor.close();
         
     }
-    
+
 }
