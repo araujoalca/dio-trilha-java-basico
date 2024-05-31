@@ -32,6 +32,5 @@ public class ContaTerminal {
     public void setNomeCliente(String nomeCliente) {
         this.nomeCliente = nomeCliente;
     }
-   
-    
+       
 }
