@@ -33,5 +33,6 @@ public class teste {
         System.out.println("Saldo: " + contaTerminal.getSaldo());
 
         leitor.close();
+        
     }
 }
